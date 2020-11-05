@@ -16,6 +16,9 @@ class Laboratorio
     void respaldar_tabla();
     void respaldar();
     void recuperar();
+    size_t size();
+
+    void insertar(const Computadora&c, size_t pos);
 
     friend Laboratorio& operator<<(Laboratorio&l, const Computadora& c)
     {
