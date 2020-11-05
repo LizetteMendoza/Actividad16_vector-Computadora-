@@ -14,6 +14,7 @@ int main(){
         cout<<"5)Insertar"<<endl;
         cout<<"6)Inicializar"<<endl;
         cout<<"7)Eliminar"<<endl;
+        cout<<"8)Ordenar"<<endl;
         cout<<"0)Salir"<<endl;
 
         getline(cin,op);
@@ -70,6 +71,9 @@ int main(){
             else{
                 l.eliminar(pos);
             }
+        }
+        else if(op=="8"){
+            l.ordenar();
         }
         else if(op=="0"){
             break;
