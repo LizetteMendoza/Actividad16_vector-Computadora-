@@ -54,7 +54,21 @@ public:
 
         return in;
    }
-   
+
+bool operator==(const Computadora&c){
+       return modelo==c.modelo;
+   }
+
+bool operator==(const Computadora&c)const {
+       return modelo==c.modelo;
+   }
+
+bool operator<(const Computadora&c){
+       return modelo <c.modelo;
+   }
+bool operator<(const Computadora&c)const {
+       return modelo <c.modelo;
+   } 
 };
 
 #endif
