@@ -21,6 +21,7 @@ class Laboratorio
     size_t size();
     void insertar(const Computadora&c, size_t pos);
     void eliminar(size_t pos);
+    void ordenar();
 
     friend Laboratorio& operator<<(Laboratorio&l, const Computadora& c)
     {
