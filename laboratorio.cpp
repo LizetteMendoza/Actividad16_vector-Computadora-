@@ -1,5 +1,6 @@
 #include"laboratorio.h"
 #include<fstream>
+#include<algorithm>
 
 Laboratorio::Laboratorio()
 {}
@@ -103,10 +104,14 @@ size_t Laboratorio::size(){
     return computadoras.size();
 }
 
- void Laboratorio::inicializar(const Computadora &c, size_t n){
+void Laboratorio::inicializar(const Computadora &c, size_t n){
      computadoras = vector<Computadora>(n,c);
- }
+}
 
- void Laboratorio::eliminar(size_t pos){
+void Laboratorio::eliminar(size_t pos){
      computadoras.erase(computadoras.begin()+pos);
- }
+}
+
+void Laboratorio::ordenar(){
+    sort(computadoras.begin(),computadoras.end());
+}
