@@ -12,6 +12,8 @@ int main(){
         cout<<"3)Respaldar"<<endl;
         cout<<"4)Recuperar"<<endl;
         cout<<"5)Insertar"<<endl;
+        cout<<"6)Inicializar"<<endl;
+        cout<<"7)Eliminar"<<endl;
         cout<<"0)Salir"<<endl;
 
         getline(cin,op);
@@ -44,6 +46,29 @@ int main(){
             }
             else{
                 l.insertar(c,pos);
+            }
+        }
+        else if(op=="6"){
+            Computadora c;
+            cin>>c; cin.ignore();
+
+            size_t n;
+            cout<<"n: ";
+            cin>>n; cin.ignore();
+
+            l.inicializar(c,n);
+        }
+        else if(op=="7"){
+    
+            size_t pos;
+            cout<<"Posicion: ";
+            cin>>pos; cin.ignore();
+
+            if(pos>=l.size()){
+                cout<<"Posicion no valida"<<endl;
+            }
+            else{
+                l.eliminar(pos);
             }
         }
         else if(op=="0"){
