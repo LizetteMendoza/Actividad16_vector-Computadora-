@@ -1,0 +1,16 @@
+ASUS FX505DT
+Ryzen 7 3750H
+Windows 10
+8
+Acer Nitro 5
+i Core i5-9
+Windows 10
+8
+Dell G3
+i Core i7
+Windows 10
+16
+Lenovo ThinkPad T14s
+i Core i7
+Windows 10 Pro
+16
